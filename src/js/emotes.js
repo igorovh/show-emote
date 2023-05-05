@@ -6,8 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 const loadEmotes = () => {
-	fetch(`https://emotes.adamcy.pl/v1/channel/furazek/emotes/all`)
-		// fetch(`https://emotes.adamcy.pl/v1/channel/${config.CHANNEL}/emotes/all`)
+	fetch(`https://emotes.adamcy.pl/v1/channel/${config.CHANNEL}/emotes/all`)
 		.then((response) => response.json())
 		.then((json) => {
 			emotes = json;

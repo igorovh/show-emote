@@ -23,7 +23,7 @@ const commands = [
 			const emote = getEmoteByCode(code);
 			if (!emote) return;
 			displayImage(emote.urls[emote.urls.length - 1].url);
-			console.log('Showing emote with code', code, `and adding cooldown for ${config.SHOW_EMOTE_COOLDOWN} secs`);
+			console.info('Showing emote with code', code, `and adding cooldown for ${config.SHOW_EMOTE_COOLDOWN} secs`);
 		},
 	},
 	{

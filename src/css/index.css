@@ -1,0 +1,16 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+.emote {
+    position: absolute;
+    transition: opacity 1s linear;
+}

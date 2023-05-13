@@ -10,8 +10,15 @@ const displayImage = (src) => {
 	image.onload = () => {
 		document.body.appendChild(image);
 
-		image.style.left = `${generateRandomX(image.width)}px`;
-		image.style.top = `${generateRandomY(image.height)}px`;
+		const width = image.width * config.SHOW_EMOTE_SIZE_MULTIPLIER;
+		const height = image.height * config.SHOW_EMOTE_SIZE_MULTIPLIER;
+		console.log(width, height);
+
+		image.width = width;
+		image.height = height;
+
+		image.style.left = `${generateRandomX(width)}px`;
+		image.style.top = `${generateRandomY(height)}px`;
 
 		setTimeout(() => (image.style.opacity = 1), 10); // Show emote
 		setTimeout(() => {

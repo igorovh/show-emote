@@ -5,6 +5,7 @@ const config = {
 	ALLOW_LIST: [],
 	BOOBA_CODES:
 		'POGGIES,tutorial,ematerasu,tadimason,THAT,AnySubGiftersInChat,please,pillow,hiheyhello,peepoSit,piksele,wideDvaAss,NewOutfit,CATBOOBS,GoodNight,mods,THIS,HUGS,mods,pjpj,rawr,HeyCutie,imready,GoodMusic,tssk,raveGirl,Lounge,YouAreVeryInteresting,BOOTY,npasThighs,tenderly,dollKisses,Kissy,dollBunny,JuwnaThighs,nonono,hannahNo,hannahYes,igotsomethingforyou,THOSE,LOOK,sussy,booty,roseDance,areyouaboy,NightRoutine,WhatYouLookingAt,Dubai,MyReactionToThatInformation,pantsu,BOOBAS',
+	SHOW_EMOTE_SIZE_MULTIPLIER: 1.25,
 };
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	if (params.has('showEmoteCooldown')) config.SHOW_EMOTE_COOLDOWN = parseInt(params.get('showEmoteCooldown'));
 	if (params.has('allowList')) config.ALLOW_LIST = params.get('allowList').split(',');
 	if (params.has('boobaCodes')) config.BOOBA_CODES = params.get('boobaCodes');
+	if (params.has('showEmoteSizeMultiplier')) config.SHOW_EMOTE_SIZE_MULTIPLIER = params.get('showEmoteSizeMultiplier');
+	console.info('Parsed config:', config);
 
 	window.dispatchEvent(new Event('config'));
 });

@@ -21,9 +21,10 @@ https://showemote.igor.ovh/?channel=igor_ovh
 - `multiShowEmoteCooldown` - cooldown for command `!multishowemote` (in seconds),
 - `multiShowEmotesAmount` - maximum amount for emotes used in `!multishowemote` command,
 - `allowList` - list of users (seperated by `,`), which will be allowed to use moderators command (without having moderator role) such as `!forceshowemote` (**moderator usernames do not have to be here, they will can use these commands anyway**),
-- `showEmoteSizeMultiplier` - size multiplier for emote on screen.  
-  You don't have to use every parameter, values shown there are deafult and if you dont use some paramater the default value will be used.  
-  So the URL can be even this: `https://showemote.igor.ovh/?channel=igor_ovh&allowList=igor_ovh&showEmoteTime=5`
+- `showEmoteSizeMultiplier` - size multiplier for emote on screen.
+
+You don't have to use every parameter, values shown there are deafult and if you dont use some paramater the default value will be used.  
+So the URL can be even this: `https://showemote.igor.ovh/?channel=igor_ovh&allowList=igor_ovh&showEmoteTime=5`
 
 ### Commands
 

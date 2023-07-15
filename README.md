@@ -32,5 +32,10 @@ Moderator commands will have an ★ after the name.
 - `!showemote <emote>` - displays emote on screen,
 - `!fshowemote` (★) - displays emote on screen without cooldown,
 - `!mshowemote <emotes>` - display all of the emotes seperated by **space** (example: `!mshowemote emote1 emote2 emote3 emote4`)
-- `!fmshowemote` (★) - display all of the emotes seperated by **space** (example: `!mshowemote emote1 emote2 emote3 emote4`) without cooldown,
+- `!fmshowemote` (★) - display all of the emotes seperated by **space** without cooldown,
 - `!reloademotes` (★) - reload emotes cache (you should be using this after adding new emote).
+
+### Work in progress
+
+- Script for StreamElement overlay,
+- `!dvd <emote>` command.

@@ -12,7 +12,6 @@ const displayImage = (src) => {
 
 		const width = image.width * config.SHOW_EMOTE_SIZE_MULTIPLIER;
 		const height = image.height * config.SHOW_EMOTE_SIZE_MULTIPLIER;
-		console.log(width, height);
 
 		image.width = width;
 		image.height = height;

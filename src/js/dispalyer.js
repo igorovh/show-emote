@@ -1,4 +1,6 @@
-const displayImage = (src) => {
+import Settings from './settings.js';
+
+export const displayImage = (src) => {
 	if (!src) return;
 
 	const image = new Image();
@@ -10,8 +12,8 @@ const displayImage = (src) => {
 	image.onload = () => {
 		document.body.appendChild(image);
 
-		const width = image.width * config.SHOW_EMOTE_SIZE_MULTIPLIER;
-		const height = image.height * config.SHOW_EMOTE_SIZE_MULTIPLIER;
+		const width = image.width * Settings.SHOW_EMOTE_SIZE_MULTIPLIER;
+		const height = image.height * Settings.SHOW_EMOTE_SIZE_MULTIPLIER;
 
 		image.width = width;
 		image.height = height;
@@ -23,7 +25,7 @@ const displayImage = (src) => {
 		setTimeout(() => {
 			image.style.opacity = 0;
 			setTimeout(() => image.remove(), 1000);
-		}, config.SHOW_EMOTE_TIME * 1000); // Remove emote
+		}, Settings.SHOW_EMOTE_TIME * 1000); // Remove emote
 	};
 };
 

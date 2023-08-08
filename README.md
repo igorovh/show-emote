@@ -7,6 +7,7 @@ Simple !showemote command for Twitch with some extra features.
 
 ```
 https://showemote.igor.ovh/?channel=igor_ovh
+    &service=twitch
     &showEmoteTime=4
     &showEmoteCooldown=60
     &multiShowEmoteCooldown=180
@@ -16,6 +17,7 @@ https://showemote.igor.ovh/?channel=igor_ovh
 ```
 
 - `channel` - channel to which bot will connect (**just your channel name**),
+- `service` - service which script will be using (`twitch` or `kick`),
 - `showEmoteTime` - how much emote will stay on screen (in seconds),
 - `showEmoteCooldown` - cooldown for command `!showemote` (in seconds),
 - `multiShowEmoteCooldown` - cooldown for command `!multishowemote` (in seconds),
@@ -24,7 +26,7 @@ https://showemote.igor.ovh/?channel=igor_ovh
 - `showEmoteSizeMultiplier` - size multiplier for emote on screen.
 
 You don't have to use every parameter, values shown there are deafult and if you dont use some paramater the default value will be used.  
-So the URL can be even this: `https://showemote.igor.ovh/?channel=igor_ovh&allowList=igor_ovh&showEmoteTime=5`
+So the URL can be even this: `https://showemote.igor.ovh/?channel=igor_ovh&allowList=igor_ovh&showEmoteTime=5&service=kick`
 
 ### Commands
 
@@ -40,3 +42,8 @@ Moderator commands will have an ★ after the name.
 
 - Script for StreamElement overlay,
 - `!dvd <emote>` command.
+- Fix `!fmshowemote` on Kick (idk why it sometimes doesn't work)
+
+### Building / Development
+
+Add latest version of [tmi.js](https://tmijs.com/) as `src/js/twitch/tmi.js`.
